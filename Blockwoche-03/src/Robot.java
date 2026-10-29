@@ -1,50 +1,35 @@
 public class Robot {
 
-    private int anzahlKomponenten;
-    private boolean zustand;
-    private int akkustand;
-    private String farbe;
-    private boolean istInBewegung;
+    private int eyes;
+    private String name;
+    private String task;
 
-    public Robot (int anzahlKomponenten, boolean zustand, int akkustand, String farbe, boolean istInBewegung) {
-        this.anzahlKomponenten = anzahlKomponenten;
-        this.zustand = zustand;
-        this.akkustand = akkustand;
-        this.farbe = farbe;
-        this.istInBewegung = istInBewegung;
+    public Robot () {}
+
+    public Robot(int eyes, String name) {
+        this.eyes = eyes;
+        this.name = name;
     }
 
     // GETTERS
-    public int getAnzahlKomponenten() {
-        return anzahlKomponenten;
+    public int getEyes() {
+        return eyes;
     }
-    public boolean isZustand() {
-        return zustand;
+    public String getName() {
+        return name;
     }
-    public int getAkkustand() {
-        return akkustand;
-    }
-    public String getFarbe() {
-        return farbe;
-    }
-    public boolean isIstInBewegung() {
-        return this.istInBewegung;
+    public String getTask() {
+        return task;
     }
 
     // SETTERS
-    public void setAnzahlKomponenten(int anzahlKomponenten) {
-        this.anzahlKomponenten = anzahlKomponenten;
+    public void setEyes(int eyes) {
+        this.eyes = eyes;
     }
-    public void setZustand(boolean zustand) {
-        this.zustand = zustand;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setAkkustand(int akkustand) {
-        this.akkustand = akkustand;
-    }
-    public void setFarbe(String farbe) {
-        this.farbe = farbe;
-    }
-    public void setIstInBewegung(boolean istInBewegung) {
-        this.istInBewegung = istInBewegung;
+    public void setTask(String task) {
+        this.task = task;
     }
 }

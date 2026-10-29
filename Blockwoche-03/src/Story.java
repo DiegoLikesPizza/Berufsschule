@@ -1,9 +1,19 @@
 public class Story {
 
     public static void main(String[] args) {
+    }
 
-        Robot robbi = new Robot(16, true, 100, "Schwarz", false);
+    private void Aufgabe3() {
+        Car ourCar = new Car();
+    }
 
-        robbi.setFarbe("Schwarz");
+    private void Aufgabe4() {
+        Robot bs1 = new Robot();
+        bs1.setTask("Raum finden.");
+        System.out.println(bs1.getTask());
+    }
+
+    private void Aufgabe5() {
+        Robot ourLego = new Robot(2, "mindstorm");
     }
 }
